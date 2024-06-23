@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoListAppForMyWorld</title>
+    <link rel="stylesheet" href="../Css/styles.css">
+    <link rel="shortcut icon" href="Images/download-removebg-preview.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&family=Playwrite+SK:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="all_box">
+        <div class="title">
+            <h1>How is your day, My Love ... ❤️</h1>
+            <h2>Let's go through another lovely day together with Koko 💓</h2>    
+        </div>
+        <span class="divider"></span>
+        <div class="list_box">
+            <h2>Let's make a list for today tasks... ❤️</h2>
+            <div class="inputs">
+                <input type="text" name="input_tasks" id="input_tasks" placeholder="Enter the Task, Bby... <3">
+                <button class="input_button" onclick="addNewTask()">
+                <i class="fa-solid fa-plus" style="margin-right: 10px;"></i>Add Task
+                </button>   
+            </div>
+            <ul id="lists">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>    
+    </div>
+
+    <!-- Modal -->
+    <div
+        class="modal fade"
+        id="congrat_modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modalTitleId"
+        aria-hidden="true"
+        style="font-family: 'Playwrite IS', sans-serif;
+        font-weight: 400; color: #f0aadf"
+    >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">
+                        Congratulation my bby...! ❤️❤️
+                        <br>You have done all the tasks for today...💓
+                        <br>Koko is sooo proud of you my love...💗💗
+                    </h5>
+                    <!-- <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button> -->
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid container-md text-center"">
+                        <h4>
+                            Here is a kiss for my bby... <span style="color: pink; font-weight: 800; text-shadow: black 0px 0px 2px;">MWAHHH!!!</span>💓💓
+                        </h4>
+                        <img src="Images/kiss.gif" alt="Cat Kissing The Screen" id="kissing_cat">
+                        <audio src="sounds/Y2meta.app - Yayyy! Sound Effect (128 kbps).mp3" id="modal_audio"></audio>
+                    </div>
+                </div>
+                <div class="modal-footer" style="display: flex; justify-content: center;">
+                    <button
+                        type="button"
+                        class="btn btn-outline-info"
+                        data-bs-dismiss="modal"
+                        style="padding: 10px; width: 80%; font-size: 20px;"
+                    >
+                        Close
+                    </button>
+                    <!-- <button type="button" class="btn btn-primary">Save</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JavaScript/javascript.js"></script>
+</body>
+</html>

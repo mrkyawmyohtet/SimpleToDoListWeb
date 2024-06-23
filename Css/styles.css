@@ -1,0 +1,211 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../Images/background-1.jpg") no-repeat center/cover;
+}
+
+.all_box{
+    width: 50%;
+    padding: 20px;
+    border: 8px solid #f0aadf;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: black 0px 0px 10px;
+    font-family: "Playwrite IS", sans-serif;
+    font-weight: 400;
+}
+
+.title{
+    margin-bottom: 30px;
+    text-shadow:#f0aadf 0px 0px 5px;
+}
+
+.divider{
+    display: block;
+    border:3px solid white;
+    border-radius: 10px;
+    box-shadow: black 0px 0px 0px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.list_box{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #87CEEB;
+    border-radius: 40px;
+    padding-left: 40px;
+    margin: 20px 70px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.input_button{
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background-color: #f0aadf;
+    color: white;
+    padding: 20px; 
+    font-size: 18px;
+    text-shadow: black 0px 0px 3px;
+}
+
+ul li{
+    list-style: none;
+    text-align: start;
+    font-size: 18px;
+    padding: 10px 5px 5px 70px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-image: url("../Images/unchecked.png");
+    background-size: cover;
+    background-position: center;
+    left: 8px;
+}
+
+ul li.checked{
+    color: gray;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url("../Images/checked.png");
+}
+
+ul li span{
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover{
+    background-color: #f0aadf;
+    color: white;
+    text-shadow: black 0px 0px 5px;
+}
+
+#kissing_cat{
+   width: 100%;
+   margin: 0;
+   top: 0;
+}
+
+@media(max-width: 600px){
+
+    body{
+        height: 100vh;
+        background: url("../Images/background-1.jpg") no-repeat center/cover;
+        
+    }
+
+    .all_box{
+        width: 90%;
+        font-weight: bold;
+    }
+
+    .all_box h1, .all_box h2{
+        font-size: 1rem;
+    }
+
+    .title{
+        margin-bottom: 20px;
+    }
+
+    .divider{
+        width: 90%;
+    }
+
+    .list_box h2{
+        margin-bottom: 20px;
+    }
+
+    .inputs{
+        border-radius: 40px;
+        padding-left: 10px;
+        margin: 10px 0px;
+    }
+
+    .input_button{
+        padding: 10px; 
+        font-size: 0.7rem;
+        text-shadow: black 0px 0px 3px;
+    }
+
+    #input_tasks{
+        font-size: 0.7rem;
+    }
+
+    ul li{
+        font-size: 0.8rem;
+        padding: 10px 5px 5px 10px;
+        position: relative;
+    }
+    
+    ul li::before{
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-image: url("../Images/unchecked.png");
+        background-size: cover;
+        background-position: center;
+        left: -30px;
+    }
+    
+    ul li span{
+        position: absolute;
+        right: 10px;
+        top: 0px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 50%;
+        line-height: 40px;
+        text-align: center;
+    }
+    
+    ul li span:hover{
+        background-color: #f0aadf;
+        color: white;
+        text-shadow: black 0px 0px 5px;
+    }
+    
+    #kissing_cat{
+       width: 100%;
+       margin: 0;
+       top: 0;
+    }
+}
